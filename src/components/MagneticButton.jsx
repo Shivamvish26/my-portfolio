@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-function MagneticButton({ children }) {
+function MagneticButton({ children, onClick }) {
   const buttonRef = useRef(null);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ function MagneticButton({ children }) {
   }, []);
 
   return (
-    <button ref={buttonRef} className="hero__button">
+    <button ref={buttonRef} onClick={onClick} className="hero__button">
       {children}
     </button>
   );

@@ -68,7 +68,6 @@ function Experience() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Section label
       gsap.fromTo(
         ".experience__label",
         { y: 50, opacity: 0 },
@@ -84,7 +83,6 @@ function Experience() {
         },
       );
 
-      // Experience cards
       gsap.fromTo(
         ".experience__card",
         { y: 100, opacity: 0 },
@@ -101,7 +99,6 @@ function Experience() {
         },
       );
 
-      // Logos
       gsap.fromTo(
         ".experience__logo-wrapper",
         { scale: 0.7, opacity: 0, rotate: -10 },
@@ -120,7 +117,6 @@ function Experience() {
         },
       );
 
-      // Content
       gsap.fromTo(
         ".experience__content > *",
         { y: 40, opacity: 0 },
@@ -143,7 +139,7 @@ function Experience() {
 
   return (
     <section className="experience" ref={experienceRef}>
-      {/* Section Header */}
+
       <div className="experience__label">
         <span>03</span>
         <span>EXPERIENCE</span>

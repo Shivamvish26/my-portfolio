@@ -66,9 +66,17 @@ function Hero() {
           INTERFACES.
         </h1>
 
-        <p className="hero__description">Full Stack Developer</p>
+        <p className="hero__description">Frontend Developer</p>
 
-        <MagneticButton>VIEW MY WORK →</MagneticButton>
+      <MagneticButton
+  onClick={() => {
+    document.getElementById("projects")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+>
+  VIEW MY WORK →
+</MagneticButton>
       </div>
 
       <div className="hero__scroll">SCROLL TO EXPLORE ↓</div>
