@@ -1,9 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import MagneticButton from "../components/MagneticButton";
-
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -104,7 +102,7 @@ function Contact() {
   }, []);
 
   return (
-    <section className="contact" ref={contactRef}>
+    <section className="contact" id="contact" ref={contactRef}>
       <div className="contact__label">
         <span>06</span>
 
@@ -125,14 +123,23 @@ function Contact() {
           opportunities to be part of your vision.
         </p>
 
-        <MagneticButton
-  onClick={() => {
-    window.location.href =
-      "mailto:shubhamhvishwakarma10@gmail.com";
-  }}
->
-  SEND ME A MESSAGE →
-</MagneticButton>
+        <div className="contact__buttons">
+          <MagneticButton
+            onClick={() => {
+              window.location.href = "mailto:shubhamhvishwakarma10@gmail.com";
+            }}
+          >
+            SEND ME A MESSAGE →
+          </MagneticButton>
+
+          <MagneticButton
+            href="/Shubham-Vishwakarma-Resume.pdf"
+            download="Shubham-Vishwakarma-Resume.pdf"
+            className="contact__resume"
+          >
+            DOWNLOAD RESUME ↓
+          </MagneticButton>
+        </div>
       </div>
 
       <div className="contact__info">

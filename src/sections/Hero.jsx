@@ -53,7 +53,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="hero" ref={heroRef}>
+    <section className="hero" id="home" ref={heroRef}>
       <HeroBackground />
       <div className="hero__content">
         <p className="hero__small-text">HELLO, I'M SHUBHAM VISHWAKARMA</p>

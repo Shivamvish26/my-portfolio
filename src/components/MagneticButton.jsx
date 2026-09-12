@@ -1,11 +1,19 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-function MagneticButton({ children, onClick }) {
+function MagneticButton({
+  children,
+  onClick,
+  href,
+  download,
+  className = "",
+  style,
+}) {
   const buttonRef = useRef(null);
 
   useEffect(() => {
     const button = buttonRef.current;
+    if (!button) return;
 
     const moveX = gsap.quickTo(button, "x", {
       duration: 0.4,
@@ -44,11 +52,22 @@ function MagneticButton({ children, onClick }) {
     };
   }, []);
 
-  return (
-    <button ref={buttonRef} onClick={onClick} className="hero__button">
-      {children}
-    </button>
-  );
+  const commonProps = {
+    ref: buttonRef,
+    onClick,
+    className: `hero__button ${className}`,
+    style,
+  };
+
+  if (href) {
+    return (
+      <a {...commonProps} href={href} download={download}>
+        {children}
+      </a>
+    );
+  }
+
+  return <button {...commonProps}>{children}</button>;
 }
 
 export default MagneticButton;

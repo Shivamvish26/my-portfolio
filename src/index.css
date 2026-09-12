@@ -847,6 +847,16 @@ body {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
+.contact__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__resume{
+  text-decoration: none;
+}
+
 .contact__footer {
   margin-top: auto;
   padding-top: 50px;
@@ -859,12 +869,187 @@ body {
   /* opacity: 0.3; */
 }
 
+/* ========================NAVBAR======================== */
+
+.navbar__toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 1001;
+  height: 58px;
+  padding: 0 18px 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.navbar__toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar__menu-text {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.navbar__icon {
+  width: 24px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+
+.navbar__icon span {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: #fff;
+  transform-origin: center;
+}
+
+.navbar__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  background: #0a0a0a;
+  color: #fff;
+  clip-path: circle(0% at 92% 6%);
+}
+
+.navbar__content {
+  width: 100%;
+  height: 100%;
+  padding: 100px 7vw 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px 0;
+}
+
+.navbar__links button {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60px 1fr 40px;
+  align-items: center;
+  padding: 7px 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.navbar__number {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.navbar__link-text {
+  font-size: clamp(34px, 4.5vw, 68px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  transition: padding-left 0.4s ease;
+}
+
+.navbar__arrow {
+  font-size: 24px;
+  opacity: 0.4;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+.navbar__links button:hover .navbar__link-text {
+  padding-left: 20px;
+}
+
+.navbar__links button:hover .navbar__arrow {
+  opacity: 1;
+  transform: translate(5px, -5px);
+}
+
+.navbar__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 15px;
+}
+
+/* ========================MOBILE===================== */
+
+@media (max-width: 768px) {
+  .navbar__toggle {
+    top: 18px;
+    right: 18px;
+    height: 52px;
+    padding: 0 15px 0 18px;
+  }
+
+  .navbar__content {
+    padding: 100px 25px 30px;
+  }
+
+  .navbar__links button {
+    grid-template-columns: 35px 1fr 30px;
+
+    padding: 10px 0;
+  }
+
+  .navbar__link-text {
+    font-size: clamp(32px, 10vw, 55px);
+    letter-spacing: -2px;
+  }
+
+  .navbar__footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
 /* =================================
    MOBILE RESPONSIVE
 ================================= */
 
 @media (max-width: 767px) {
-
   html,
   body {
     width: 100%;
@@ -929,7 +1114,6 @@ body {
     background-size: 50px 50px;
   }
 
-
   /* ABOUT */
 
   .about {
@@ -991,7 +1175,6 @@ body {
   .about__custom-icon {
     font-size: 24px;
   }
-
 
   /* EXPERIENCE */
 
@@ -1055,7 +1238,6 @@ body {
     padding: 7px 10px;
     font-size: 9px;
   }
-
 
   /* PROJECTS */
 
@@ -1157,7 +1339,6 @@ body {
     width: 60px;
   }
 
-
   /* EDUCATION */
 
   .education {
@@ -1242,7 +1423,6 @@ body {
     font-size: 7px;
     letter-spacing: 2px;
   }
-
 
   /* CONTACT */
 

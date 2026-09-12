@@ -138,7 +138,7 @@ function Experience() {
   }, []);
 
   return (
-    <section className="experience" ref={experienceRef}>
+    <section className="experience" id="experience" ref={experienceRef}>
 
       <div className="experience__label">
         <span>03</span>

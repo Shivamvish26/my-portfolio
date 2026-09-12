@@ -7,6 +7,7 @@ import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Education from "./sections/Education";
 import Contact from "./sections/Contact";
+import Navbar from "./sections/Navbar";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,12 +19,13 @@ function App() {
       {loading && <Loader onComplete={() => setLoading(false)} />}
       {!loading && (
         <>
+          <Navbar />
           <Hero />
           <About />
           <Experience />
           <Projects />
-          <Education/>
-          <Contact/>
+          <Education />
+          <Contact />
         </>
       )}
     </>

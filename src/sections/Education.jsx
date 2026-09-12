@@ -92,7 +92,7 @@ function Education() {
   }, []);
 
   return (
-    <section className="education" ref={educationRef}>
+    <section className="education" id="education" ref={educationRef}>
 
       <div className="education__label">
         <span>05</span>

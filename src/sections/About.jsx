@@ -118,7 +118,7 @@ function About() {
   }, []);
 
   return (
-    <section className="about" ref={aboutRef}>
+    <section className="about" id="about" ref={aboutRef}>
       <div className="about__label">
         <span>01</span>
         <span>ABOUT ME</span>
