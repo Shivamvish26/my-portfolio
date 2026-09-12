@@ -14,11 +14,9 @@ function Projects() {
       title: "Handa Realtor",
       category: "REAL ESTATE PLATFORM",
       description:
-        "Developed a responsive real estate web application that enables users to buy, rent, and sell properties through an intuitive interface. Built dynamic property listing pages with advanced search and filtering functionality, integrated RESTful APIs for real-time property data, and developed reusable React components to improve scalability and maintainability. Optimized the application for mobile responsiveness, cross-browser compatibility, and overall user experience.",
+        "Developed a responsive real estate web application using React.js, enabling users to buy, rent, and sell properties. Implemented dynamic listings, search and filtering, RESTful API integration, and reusable components with a focus on performance and mobile responsiveness.",
       technologies: [
         "React.js",
-        "React Hooks",
-        "React Router",
         "Bootstrap",
         "JavaScript (ES6+)",
         "RESTful APIs",
@@ -32,11 +30,9 @@ function Projects() {
       title: "Skilled Movers",
       category: "MOVING SERVICES PLATFORM",
       description:
-        "Designed and developed a responsive web application for a material transfer and relocation service platform. Implemented a mobile-first approach, built reusable UI components, integrated RESTful APIs, and optimized the application for performance, accessibility, and cross-browser compatibility to deliver a seamless user experience across all devices.",
+        "Developed a responsive material transfer and relocation platform using React.js. Implemented reusable components, RESTful API integration, mobile-first design, and cross-browser optimization for a seamless user experience.",
       technologies: [
         "React.js",
-        "React Hooks",
-        "React Router",
         "Bootstrap",
         "JavaScript (ES6+)",
         "RESTful APIs",
@@ -50,7 +46,7 @@ function Projects() {
       title: "CG-Portal",
       category: "EDUCATION MANAGEMENT PLATFORM",
       description:
-        "Developed a React.js based data management portal to streamline the NAAC accreditation reporting process for higher education institutions. Built responsive, form-driven user interfaces for efficient data capture, integrated RESTful APIs to enable seamless communication with backend services, and supported integration with existing institutional systems such as the Learning Management System (LMS). Contributed to improving data accuracy, reducing manual effort, and delivering a scalable, user-friendly solution for centralized academic data management.",
+        "Developed a React.js-based data management portal for NAAC accreditation reporting. Built responsive forms, integrated RESTful APIs and LMS systems, and improved data accuracy while reducing manual effort through centralized academic data management.",
       technologies: [
         "React.js",
         "JavaScript (ES6+)",
