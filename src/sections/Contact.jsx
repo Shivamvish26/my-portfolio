@@ -133,8 +133,8 @@ function Contact() {
           </MagneticButton>
 
           <MagneticButton
-            href="/Shubham-Vishwakarma-Resume.pdf"
-            download="Shubham-Vishwakarma-Resume.pdf"
+            href="/Shubham_Vishwakarma_Resume.pdf"
+            download="Shubham_Vishwakarma_Resume.pdf"
             className="contact__resume"
           >
             DOWNLOAD RESUME ↓
